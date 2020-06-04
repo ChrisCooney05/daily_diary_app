@@ -17,4 +17,11 @@ feature 'Add New Entry' do
     visit('/add-entry') 
     expect(page).to have_field('new_entry')
   end
+
+  scenario 'Confirms that an entry has been saved' do
+    visit('/add-entry') 
+    fill_in 'new_entry', with: 'this is a test'
+    click_button('Add Entry')
+    expect(page).to have_content('New Entry Saved')
+  end
 end
