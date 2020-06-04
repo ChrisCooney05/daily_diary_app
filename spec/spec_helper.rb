@@ -30,7 +30,7 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 ])
 SimpleCov.start
 
-# Capybara.app = BookmarkManager
+Capybara.app = Diary
 
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration

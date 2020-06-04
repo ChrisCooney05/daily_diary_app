@@ -1,7 +1,17 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/chriscooney/projects/makers/Week_4/daily_dairy_app/spec/features/diary_app_features_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
     },
-    "timestamp": 1591262375
+    "timestamp": 1591262601
   }
 }
