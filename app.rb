@@ -7,5 +7,9 @@ class Diary < Sinatra::Base
     erb :index
   end
 
+  get '/add-entry' do
+    erb :add_entry
+  end
+
   run! if app_file == $PROGRAM_NAME
 end

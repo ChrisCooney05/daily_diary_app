@@ -11,3 +11,10 @@ feature 'Homepage' do
     expect(page).to have_button('Add New Entry')
   end
 end
+
+feature 'Add New Entry' do 
+  scenario 'Should have a text field to add a dairy entry' do
+    visit('/add-entry') 
+    expect(page).to have_field('new_entry')
+  end
+end
