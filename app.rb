@@ -3,7 +3,7 @@ require 'sinatra/base'
 class Diary < Sinatra::Base 
 
   get '/' do
-    'My Diary'
+    erb :index
   end
 
   run! if app_file == $0
