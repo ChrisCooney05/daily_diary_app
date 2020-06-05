@@ -5,6 +5,7 @@ require_relative './lib/diary_book.rb'
 
 class Diary < Sinatra::Base
   get '/' do
+    @entrys = DiaryBook.get
     erb :index
   end
 

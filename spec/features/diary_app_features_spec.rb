@@ -31,3 +31,18 @@ feature 'Add New Entry' do
     expect(page).to have_content('My Diary')
   end
 end
+
+feature 'View entries' do 
+  scenario 'Home page should have a list of titles for each entry' do
+    visit('/add-entry') 
+    fill_in 'title', with: 'Test1'
+    fill_in 'new_entry', with: 'this is a test'
+    click_button('Add Entry')
+    click_button('Add New Entry')
+    fill_in 'title', with: 'Test2'
+    fill_in 'new_entry', with: 'this is a test again'
+    click_button('Add Entry')
+    expect(page).to have_content('Test1')
+    expect(page).to have_content('Test2')
+  end
+end

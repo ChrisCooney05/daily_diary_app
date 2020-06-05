@@ -4,4 +4,10 @@
   <form action='/add-entry' method='GET'>
     <input type='submit' value='Add New Entry'>
   </form>
-  </body>
+  <br>
+  <ul> 
+    <%@entrys.each do |entry|%>
+      <li><%=entry.title%></li>
+    <%end%>
+  </ul>
+</body>
