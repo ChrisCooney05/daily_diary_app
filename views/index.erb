@@ -1,3 +1,4 @@
+
 <body>
   <h1>My Diary</h1>
   <br>
@@ -7,7 +8,7 @@
   <br>
   <ul> 
     <%@entrys.each do |entry|%>
-      <li><%=entry.title%></li>
+      <li><%=entry.title%><br><%=entry.entry%></li></a>
     <%end%>
   </ul>
 </body>

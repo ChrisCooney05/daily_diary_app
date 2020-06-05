@@ -2,10 +2,11 @@ require 'pg'
 
 class DiaryBook
 
-  attr_reader :title
+  attr_reader :title, :entry
 
-  def initialize(title)
+  def initialize(title, entry)
     @title = title
+    @entry = entry
   end
 
   def self.add(entry, title)
@@ -25,7 +26,7 @@ class DiaryBook
     end
     result = con.exec("SELECT * FROM diary")
     result.map do |entry|
-      DiaryBook.new(entry['title'])
+      DiaryBook.new(entry['title'], entry['entry'])
     end
   end
 

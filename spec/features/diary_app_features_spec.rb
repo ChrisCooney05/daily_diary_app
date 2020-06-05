@@ -43,6 +43,9 @@ feature 'View entries' do
     fill_in 'new_entry', with: 'this is a test again'
     click_button('Add Entry')
     expect(page).to have_content('Test1')
+    expect(page).to have_content('this is a test')
     expect(page).to have_content('Test2')
+    expect(page).to have_content('this is a test again')
   end
 end
+
