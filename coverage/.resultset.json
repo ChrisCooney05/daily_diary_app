@@ -26,6 +26,12 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           null,
@@ -47,27 +53,8 @@
           null,
           null
         ]
-      },
-      "/Users/chriscooney/projects/makers/Week_4/daily_dairy_app/lib/diary_book.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          0,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1591348565
+    "timestamp": 1591349094
   }
 }

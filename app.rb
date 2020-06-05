@@ -13,8 +13,7 @@ class Diary < Sinatra::Base
   end
 
   post '/entry-added' do
-    p params
-    DiaryBook.add(params[:new_entry])
+    DiaryBook.add(params[:new_entry], params[:title])
     erb :entry_added
   end
 

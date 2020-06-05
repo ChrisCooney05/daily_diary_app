@@ -6,7 +6,7 @@ describe DiaryBook do
   end
 
   it 'Should respond to being called with a single argument' do
-    expect(DiaryBook).to receive(:add).with('an argument')
-    DiaryBook.add('an argument')
+    expect(DiaryBook).to receive(:add).with('an argument', 'a title')
+    DiaryBook.add('an argument', 'a title')
   end
 end
