@@ -28,6 +28,6 @@ feature 'Add New Entry' do
     fill_in 'title', with: 'Test title'
     fill_in 'new_entry', with: 'this is a test'
     click_button('Add Entry')
-    expect(page).to have_content('New Entry Saved')
+    expect(page).to have_content('My Diary')
   end
 end

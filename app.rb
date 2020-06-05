@@ -14,7 +14,7 @@ class Diary < Sinatra::Base
 
   post '/entry-added' do
     DiaryBook.add(params[:new_entry], params[:title])
-    erb :entry_added
+    redirect '/'
   end
 
   run! if app_file == $PROGRAM_NAME
